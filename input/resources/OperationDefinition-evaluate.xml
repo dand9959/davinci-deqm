@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OperationDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="deqm.evaluate-measure"/>
-    <url value="http://hl7.org/fhir/us/davinci-deqm/OperationDefinition/deqm.evaluate-measure"/>
-    <name value="DEQMEvaluateMeasure"/>
-    <title value="DEQM Evaluate Measure"/>
+    <id value="evaluate"/>
+    <url value="http://hl7.org/fhir/us/davinci-deqm/OperationDefinition/evaluate"/>
+    <name value="Evaluate"/>
+    <title value="Evaluate Operation"/>
     <status value="active"/>
     <kind value="operation"/>
     <publisher value="Clinical Quality Information Workgroup"/>
@@ -14,7 +14,7 @@
         <value value="http://www.hl7.org/Special/committees/cqi/index.cfm"/>
       </telecom>
     </contact>
-    <description value="The deqm.evaluate-measure operation is used to calculate an eMeasure and obtain the results."/>
+    <description value="The evaluate operation is used to calculate an eMeasure and obtain the results."/>
     <jurisdiction>
       <coding>
         <system value="urn:iso:std:iso:3166"/>
@@ -22,7 +22,7 @@
         <display value="United States of America"/>
       </coding>
     </jurisdiction>
-    <code value="deqm.evaluate-measure"/>
+    <code value="evaluate"/>
     <resource value="Measure"/>
     <system value="false"/>
     <type value="true"/>
@@ -90,6 +90,14 @@
         <type value="string"/>
         <searchType value="reference"/>
     </parameter>
+    <parameter>
+        <name value="subjectGroup"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="Group"/>
+    </parameter>
+    
     <parameter>
         <name value="parameters"/>
         <use value="in"/>
