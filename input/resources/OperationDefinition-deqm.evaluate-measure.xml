@@ -48,9 +48,9 @@
       <use value="in"/>
       <min value="0"/>
       <max value="1"/>
-      <documentation value="The quality program being reported via canonical reference to ([Library{CQFMQualityProgram}](http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/library-cqfm)) indicating which quality program is being reported."/>
+        <documentation value="The quality program being reported via canonical reference to ([Library{CRMIManifestLibray}](http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-manifestlibrary)) indicating which quality program is being reported."/>
       <type value="canonical"/>
-      <targetProfile value="http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/library-cqfm"/>
+        <targetProfile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-manifestlibrary"/>
         <name value="manifest"/>
         <use value="in"/>
         <min value="0"/>
@@ -63,11 +63,11 @@
       <use value="in"/>
       <min value="0"/>
       <max value="1"/>
-      <documentation value="The quality program being reported via code from the [Reporting Program value set](http://hl7.org/fhir/us/cqfmeasures/ValueSet/quality-programs) indicating which quality program is being reported."/>
+      <documentation value="The quality program being reported via code from the [Reporting Program value set](http://hl7.org/fhir/us/cqfmeasures/ValueSet/quality-programs-example) indicating which quality program is being reported."/>
       <type value="CodeableConcept"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/us/cqfmeasures/ValueSet/quality-programs"/>
+        <valueSet value="http://hl7.org/fhir/us/cqfmeasures/ValueSet/quality-programs-example"/>
       </binding>
     </parameter>
     <parameter>
